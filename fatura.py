@@ -1,0 +1,6 @@
+nome_cliente = input ('Digite o nome do cliente: ')
+dia_venc = input ('Digite o dia de vencimento: ')
+mes_venc = input ('Digite o mês de vencimento: ')
+valor_fat = float(input ('Digite o valor da fatura: '))
+formatado = f'R$ {valor_fat:,.2f}'.replace(',', 'X').replace('.', ','.replace('X', '.')) 
+print ('Olá,', nome_cliente, '\nA sua fatura com vencimento em', dia_venc, 'de', mes_venc, 'no valor de', formatado, ' está fechada.')
